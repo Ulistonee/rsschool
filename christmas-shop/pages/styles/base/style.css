@@ -23,3 +23,22 @@ ul {
     margin: 0;
 }
 
+.primary-btn {
+    border-radius: 20px;
+    padding: 20px 32px;
+    background: var(--dark);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--static-white);
+}
+
+.primary-btn:hover {
+    background: var(--static-white);
+    color: var(--dark);
+}
+
