@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 :root {
     --primary: #ff4646;
     --dark: #181c29;
@@ -24,6 +28,7 @@ ul {
 }
 
 .primary-btn {
+    border: solid transparent;
     border-radius: 20px;
     padding: 20px 32px;
     background: var(--dark);
@@ -35,10 +40,12 @@ ul {
     text-transform: uppercase;
     text-align: center;
     color: var(--static-white);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .primary-btn:hover {
     background: var(--static-white);
     color: var(--dark);
+    cursor: pointer;
 }
 
