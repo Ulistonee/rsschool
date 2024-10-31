@@ -19,3 +19,60 @@
     text-align: center;
     color: var(--static-white);
 }
+
+.about-caption-typography {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: var(--primary);
+}
+
+.about-header2-typography {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+
+.about-paragraph-typography {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 148%;
+    color: var(--dark);
+}
+
+.slider-caption-typography {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: var(--static-white);
+}
+
+.slider-header2-typography {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 152%;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--static-white);
+}
+
+.slider-text {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--static-white);
+}

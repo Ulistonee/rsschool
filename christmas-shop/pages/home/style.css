@@ -1,8 +1,3 @@
-.hero-bg-wrapper {
-    max-width: 1440px;
-    margin: 0 auto;
-}
-
 .hero-container {
     display: flex;
     justify-content: center;
@@ -24,4 +19,105 @@
     margin-top: 60px;
     margin-bottom: 60px;
     max-width: 426px;
+}
+
+.about-bg-wrapper {
+    background-color: var(--primary);
+    background-image: url("../../assets/images/img-compressed/bg-snow.png");
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, cover;
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    display: flex;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    background-color: white;
+}
+
+.about-text-container {
+    padding: 100px 152px 100px 60px;
+    background-color: white;
+    text-align: left;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.santa {
+    width: 638px;
+    height: 528px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.slider-bg-wrapper {
+    background-color: var(--primary);
+    background-image: url("../../assets/images/img-compressed/bg-snow.png");
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, cover;
+}
+
+.slider-caption {
+    padding-top: 60px;
+    margin: 0;
+}
+
+.slider-header2 {
+    padding-top: 12px;
+}
+
+.slider-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 82px;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: hidden;
+    gap: 20px;
+    transition: transform 0.5s ease;
+}
+
+.slider-container li {
+    display: flex;
+    gap: 20px;
+}
+
+
+.slider-container li img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+
+.slider-btn-container {
+    display: flex;
+    justify-content: end;
+    padding-left: 82px;
+    padding-right: 82px;
+    gap: 20px;
+}
+
+@media (max-width: 1500px) {
+    .about-text-container {
+        padding: 60px 60px 106px;
+    }
+
+    .santa {
+        width: 376px;
+        height: 528px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-container {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 }
