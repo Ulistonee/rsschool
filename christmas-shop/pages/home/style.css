@@ -63,7 +63,6 @@
 
 .slider-caption {
     padding-top: 60px;
-    margin: 0;
 }
 
 .slider-header2 {
@@ -102,6 +101,109 @@
     padding-left: 82px;
     padding-right: 82px;
     gap: 20px;
+}
+
+.best-gifts-bg-wrapper {
+    background-color: var(--primary);
+    background-image: url("../../assets/images/img-compressed/bg-snow.png");
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, cover;
+}
+
+.best-gifts-gallery {
+    display: flex;
+    padding: 20px 82px 60px;
+    gap: 12px;
+}
+
+.best-gifts-gallery li {
+    border-radius: 20px;
+    background: var(--content-background);
+    overflow: hidden;
+    width: 310px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+}
+
+.best-gifts-gallery li img {
+    width: 100%;
+    height: auto;
+}
+
+.best-gifts-text-container {
+    background: var(--static-white);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.for-work {
+    color: var(--tag-purple);
+}
+
+.for-health {
+    color: var(--tag-green);
+}
+
+.for-harmony {
+    color: var(--tag-pink);
+}
+
+.cta-bg-wrapper {
+    background-color: var(--primary);
+    background-image: url("../../assets/images/img-compressed/bg-forest.png"), url("../../assets/images/img-compressed/bg-garland.png");
+    background-position: center, center;
+    background-repeat: no-repeat, repeat;
+    background-size: cover, cover;
+    display: flex;
+    justify-content: center;
+}
+
+.cta-smaller-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 20px;
+}
+
+.timer-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.timer {
+    display: flex;
+    padding-top: 8px;
+    background: var(--static-white-40);
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 8px 12px 12px;
+}
+
+.cell-timer {
+    width: 80px;
+    height: 52px;
+    position: relative;
+}
+
+.cell-timer::after {
+    content: "";
+    border: 1px solid var(--static-white-40);
+    width: 20px;
+    height: 0;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
 }
 
 @media (max-width: 1500px) {
