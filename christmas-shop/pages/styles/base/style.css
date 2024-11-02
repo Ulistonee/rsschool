@@ -80,3 +80,28 @@ ul {
     margin: 0 auto;
 }
 
+.gift-card {
+    border-radius: 20px;
+    background: var(--content-background);
+    overflow: hidden;
+    width: 310px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gift-img {
+    width: 100%;
+    height: auto;
+}
+
+.gift-card-text-container {
+    background: var(--static-white);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+

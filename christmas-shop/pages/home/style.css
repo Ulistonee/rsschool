@@ -117,31 +117,6 @@
     gap: 12px;
 }
 
-.best-gifts-gallery li {
-    border-radius: 20px;
-    background: var(--content-background);
-    overflow: hidden;
-    width: 310px;
-    height: 342px;
-    display: flex;
-    flex-direction: column;
-}
-
-.best-gifts-gallery li img {
-    width: 100%;
-    height: auto;
-}
-
-.best-gifts-text-container {
-    background: var(--static-white);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    border-radius: 20px;
-    padding: 20px;
-    flex-grow: 1;
-}
-
 .for-work {
     color: var(--tag-purple);
 }
