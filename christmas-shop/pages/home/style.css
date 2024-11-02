@@ -112,9 +112,21 @@
     background-size: cover, cover;
 }
 
+.best-gifts-smaller-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.best-gifts-smaller-container h2 {
+    padding-top: 12px;
+}
+
 .best-gifts-gallery {
     display: flex;
-    padding: 20px 82px 60px;
     gap: 12px;
 }
 
@@ -136,17 +148,17 @@
     background-position: center, center;
     background-repeat: no-repeat, repeat;
     background-size: cover, cover;
-    display: flex;
-    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 .cta-smaller-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    gap: 20px;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    gap: 15px;
 }
 
 .timer-wrapper {
@@ -157,7 +169,6 @@
 
 .timer {
     display: flex;
-    padding-top: 8px;
     background: var(--static-white-40);
     border-radius: 20px;
     justify-content: space-between;
@@ -178,19 +189,23 @@
     transform: rotate(90deg);
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 84%;
     box-sizing: border-box;
 }
 
-@media (max-width: 1500px) {
-    /*.about-text-container {*/
-    /*    padding: 60px 60px 106px;*/
-    /*}*/
+.cell-timer:nth-of-type(4)::after {
+    content: none;
+}
 
-    /*.santa {*/
-    /*    width: 376px;*/
-    /*    height: 528px;*/
-    /*}*/
+@media (max-width: 1500px) {
+    .about-text-container {
+        padding: 60px 60px 106px;
+    }
+
+    .santa {
+        width: 376px;
+        height: 528px;
+    }
 }
 
 @media (max-width: 1000px) {
