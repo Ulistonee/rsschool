@@ -130,18 +130,6 @@
     gap: 12px;
 }
 
-.for-work {
-    color: var(--tag-purple);
-}
-
-.for-health {
-    color: var(--tag-green);
-}
-
-.for-harmony {
-    color: var(--tag-pink);
-}
-
 .cta-bg-wrapper {
     background-color: var(--primary);
     background-image: url("../../assets/images/img-compressed/bg-forest.png"), url("../../assets/images/img-compressed/bg-garland.png");

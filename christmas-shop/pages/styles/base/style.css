@@ -105,3 +105,15 @@ ul {
     flex-grow: 1;
 }
 
+.for-work {
+     color: var(--tag-purple);
+ }
+
+.for-health {
+    color: var(--tag-green);
+}
+
+.for-harmony {
+    color: var(--tag-pink);
+}
+

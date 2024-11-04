@@ -1,9 +1,10 @@
 .gifts-bg-wrapper {
     background-color: var(--primary);
     background-image: url("../../assets/images/img-compressed/bg-garland.png");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    border-radius: 20px;
 }
 
 .gifts {
