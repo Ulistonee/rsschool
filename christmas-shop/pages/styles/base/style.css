@@ -21,11 +21,22 @@
     --third-family: "SF Pro", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     list-style: none;
     padding-left: 0;
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+}
+
 
 * {
     margin: 0;
@@ -90,6 +101,18 @@ ul {
     flex-direction: column;
 }
 
+.gift-card h3 {
+    transition: color 0.3s ease;
+}
+
+.gift-card:hover {
+    cursor: pointer;
+}
+
+.gift-card:hover h3 {
+    color: var(--primary);
+}
+
 .gift-img {
     width: 100%;
     height: auto;
@@ -115,5 +138,13 @@ ul {
 
 .for-harmony {
     color: var(--tag-pink);
+}
+
+.truncate {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
