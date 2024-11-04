@@ -1,0 +1,34 @@
+.gifts-bg-wrapper {
+    background-color: var(--primary);
+    background-image: url("../../assets/images/img-compressed/bg-garland.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 20px;
+}
+
+.gifts {
+    padding: 60px 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 8px;
+}
+
+.tab-item {
+    border-radius: 12px;
+    padding: 12px 20px;
+    background: var(--static-white-20);
+}
+
+.gifts-pagination-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 12px;
+}

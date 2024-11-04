@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --primary: #ff4646;
+    --dark: #181c29;
+    --static-white: #fff;
+    --content-background: #ecf3f8;
+    --tag-purple: #4361ff;
+    --tag-pink: #ff43f7;
+    --tag-green: #06a44f;
+    --primary-10: rgba(255, 70, 70, 0.1);
+    --static-white-20: rgba(255, 255, 255, 0.2);
+    --static-white-40: rgba(255, 255, 255, 0.4);
+}
+
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Allura", sans-serif;
+    --third-family: "SF Pro", sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+}
+
+.primary-btn {
+    border: solid transparent;
+    border-radius: 20px;
+    padding: 20px 32px;
+    background: var(--dark);
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--static-white);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.primary-btn:hover {
+    background: var(--static-white);
+    color: var(--dark);
+    cursor: pointer;
+}
+
+.slider-btn {
+    border: 1px solid var(--static-white);
+    border-radius: 20px;
+    width: 56px;
+    height: 56px;
+    background: transparent;
+    transition: background-color 0.3s ease;
+    color: var(--static-white);
+}
+
+.slider-btn:hover{
+    background: var(--static-white);
+    cursor: pointer;
+    color: var(--primary);
+}
+
+.slider-btn:disabled {
+    color: var(--static-white-40);
+    background: transparent;
+    cursor: auto;
+}
+
+.bg-width-wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.gift-card {
+    border-radius: 20px;
+    background: var(--content-background);
+    overflow: hidden;
+    width: 310px;
+    height: 342px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gift-img {
+    width: 100%;
+    height: auto;
+}
+
+.gift-card-text-container {
+    background: var(--static-white);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.for-work {
+     color: var(--tag-purple);
+ }
+
+.for-health {
+    color: var(--tag-green);
+}
+
+.for-harmony {
+    color: var(--tag-pink);
+}
+
