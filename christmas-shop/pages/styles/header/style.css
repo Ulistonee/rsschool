@@ -35,4 +35,6 @@
     color: var(--primary);
 }
 
-
+.non-interactive {
+    pointer-events: none;
+}

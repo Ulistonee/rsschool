@@ -23,7 +23,18 @@
 .tab-item {
     border-radius: 12px;
     padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.tab-item:hover {
     background: var(--static-white-20);
+}
+
+.default-hover {
+    background: var(--static-white-20);
+    cursor: default;
 }
 
 .gifts-pagination-container {
