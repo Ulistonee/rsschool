@@ -237,3 +237,18 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+@media (max-width: 380px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .slider-container {
+        overflow-x: unset;
+    }
+
+    .best-gifts-gallery {
+        display: flex;
+        flex-direction: column;
+    }
+}
