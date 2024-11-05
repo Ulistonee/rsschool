@@ -185,6 +185,13 @@
     content: none;
 }
 
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 4px;
+}
+
 @media (max-width: 1500px) {
     .about-text-container {
         padding: 60px 60px 106px;
@@ -200,5 +207,33 @@
     .about-container {
         margin-left: 8px;
         margin-right: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 12px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-bar {
+        display: none;
+    }
+
+    .slider-smaller-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .slider-container {
+        overflow-x: hidden;
+    }
+
+    .best-gifts-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }

@@ -73,3 +73,20 @@
     color: var(--primary);
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+    .footer-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .contacts {
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+    }
+
+    .contacts-card {
+        width: unset;
+    }
+}
