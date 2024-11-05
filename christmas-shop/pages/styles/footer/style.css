@@ -74,7 +74,7 @@
     cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .footer-container {
         padding-left: 8px;
         padding-right: 8px;

@@ -208,6 +208,16 @@
         margin-left: 8px;
         margin-right: 8px;
     }
+
+    .slider-smaller-container {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .best-gifts-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -223,24 +233,20 @@
         display: none;
     }
 
-    .slider-smaller-container {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-
     .slider-container {
         overflow-x: hidden;
     }
-
-    .best-gifts-gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 700px) {
     .about-container {
         flex-direction: column;
+    }
+
+    .about-text-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: 376px;
     }
 
     .slider-container {
