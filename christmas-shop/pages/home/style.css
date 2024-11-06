@@ -194,7 +194,7 @@
 
 @media (max-width: 1500px) {
     .about-text-container {
-        padding: 60px 60px 106px;
+        padding: 106px 60px;
     }
 
     .santa {
@@ -207,6 +207,12 @@
     .about-container {
         margin-left: 8px;
         margin-right: 8px;
+    }
+
+    .about-text-container {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 60px;
     }
 
     .slider-smaller-container {
@@ -222,7 +228,7 @@
 
 @media (max-width: 768px) {
     .header-container {
-        padding: 12px 0;
+        padding: 12px 8px;
     }
 
     .burger {
@@ -241,12 +247,12 @@
 @media (max-width: 700px) {
     .about-container {
         flex-direction: column;
+        padding-top: 60px;
     }
 
     .about-text-container {
-        padding-left: 20px;
-        padding-right: 20px;
-        max-width: 376px;
+        max-width: 364px;
+        padding-top: 0;
     }
 
     .slider-container {
@@ -256,5 +262,9 @@
     .best-gifts-gallery {
         display: flex;
         flex-direction: column;
+    }
+
+    br {
+        display: none;
     }
 }
