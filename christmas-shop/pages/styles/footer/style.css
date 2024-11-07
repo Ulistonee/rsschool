@@ -74,19 +74,21 @@
     cursor: pointer;
 }
 
+@media (max-width: 1439px) {
+    .contacts {
+        flex-direction: column;
+        flex: 1;
+        width: 100%;
+    }
+    .contacts-card {
+        width: unset;
+    }
+}
+
 @media (max-width: 1000px) {
     .footer-container {
         padding-left: 8px;
         padding-right: 8px;
     }
 
-    .contacts {
-        flex-direction: column;
-        flex: 1;
-        width: 100%;
-    }
-
-    .contacts-card {
-        width: unset;
-    }
 }
