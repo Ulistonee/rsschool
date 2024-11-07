@@ -136,7 +136,7 @@
 
 .cta-bg-wrapper {
     background-color: var(--primary);
-    background-image: url("../../assets/images/img-compressed/bg-forest.png"), url("../../assets/images/img-compressed/bg-garland.png"), url("../../assets/images/img-compressed/bg-snow.png");
+    background-image: url("../../assets/images/img-compressed/bg-forest.png"), url("../../assets/images/img-compressed/bg-snow.png");
     background-position: center, center;
     background-repeat: no-repeat, repeat;
     background-size: cover, cover;
