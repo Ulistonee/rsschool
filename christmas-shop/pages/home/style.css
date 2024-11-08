@@ -228,6 +228,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .slider-container {
+        overflow-x: hidden;
+    }
+}
+
 @media (max-width: 720px) {
     .about-container {
         flex-direction: column;

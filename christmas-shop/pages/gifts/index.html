@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christmas Shop</title>
+    <script type="module" defer src="../scripts/burger.js"></script>
     <link rel="icon" href="../../Vector.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../styles/base/style.css">
@@ -47,11 +48,15 @@
         </ul>
       </nav>
       <div class="burger" id="burger">
-        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 16H30" stroke="#181C29" stroke-linecap="round" stroke-linejoin="round" />
-          <path d="M10 24H30" stroke="#181C29" stroke-linecap="round" stroke-linejoin="round" />
-        </svg>
+        <span></span>
+        <span></span>
       </div>
+      <ul class="burger-menu" id="burgerMenu">
+        <li><a href="../gifts/" class="action-large">gifts</a></li>
+        <li><a href="../home/#about" class="action-large">about</a></li>
+        <li><a href="../home/#bestGifts" class="action-large">best</a></li>
+        <li><a href="../home/#contacts" class="action-large">contacts</a></li>
+      </ul>
     </header>
     <main>
       <div class="bg-width-wrapper">
