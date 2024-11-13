@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const generateShiftArray = (sliderLineWidth, sliderVisibleArea, clicksNeeded) => {
         const lineLeft = sliderLineWidth - sliderVisibleArea;
-        console.log('generate', sliderLineWidth, sliderVisibleArea, lineLeft, document.getElementById('slider').scrollWidth)
         const shift = Math.floor(lineLeft / (clicksNeeded));
         return Array.from(Array(clicksNeeded)).reduce((acc, item, index) => {
             if (index < clicksNeeded - 1) {
