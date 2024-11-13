@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christmas Shop</title>
     <script type="module" defer src="../scripts/burger.js"></script>
+    <script type="module" defer src="../scripts/slider.js"></script>
     <link rel="icon" href="../../Vector.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../styles/base/style.css">
@@ -93,36 +94,36 @@
         </div>
         <div class="bg-width-wrapper">
             <section class="slider-bg-wrapper">
-                <div class="slider-smaller-container">
+                <div class="slider-smaller-container" id="sliderContainer">
                     <div>
                         <p class="caption slider-caption color-static-white text-align-center">Become Happier!</p>
                         <h2 class="header2 slider-header2 color-static-white text-align-center">in the new 2025</h2>
                     </div>
-                    <ul class="slider-container">
-                            <li>
+                    <ul class="slider-container" id="slider">
+                            <li class="slider-item">
                                 <p class="slider-text color-static-white">live</p>
                                 <img src="../../assets/images/img-compressed/snowman.png" alt="">
                             </li>
-                            <li>
+                            <li class="slider-item">
                                 <p class="slider-text color-static-white">create</p>
                                 <img src="../../assets/images/img-compressed/christmas-trees.png" alt="">
                             </li>
-                            <li>
+                            <li class="slider-item">
                                 <p class="slider-text color-static-white">love</p>
                                 <img src="../../assets/images/img-compressed/christmas-tree-ball.png" alt="">
                             </li>
-                            <li>
+                            <li class="slider-item">
                                 <p class="slider-text color-static-white">dream</p>
                                 <img src="../../assets/images/img-compressed/fairytale-house.png" alt="">
                             </li>
                         </ul>
                     <div class="slider-btn-container">
-                        <button class="slider-btn prev-btn" disabled>
+                        <button class="slider-btn prev-btn" disabled id="prevButton">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <button class="slider-btn next-btn">
+                        <button class="slider-btn next-btn" id="nextButton">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
