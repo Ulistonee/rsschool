@@ -1,13 +1,14 @@
-import {gifts} from '../data/data.js';
+import {gifts} from "../data/data.js";
 import {classCategory} from "../utilities/utilities.js";
 import {getRandomCards} from "../utilities/utilities.js";
 
-function displayCards() {
-    const randomCards = getRandomCards(gifts, 4);
-    const gallery = document.getElementById("gallery");
-    gallery.innerHTML = "";
+function displayCards(category) {
+    const container = document.getElementById("gift-card-container");
+    container.innerHTML = "";
 
-    randomCards.forEach(card => {
+    const filteredCards = category === "all" ? getRandomCards(gifts, 36) : gifts.filter(card => card.category === category);
+
+    filteredCards.forEach(card => {
         const giftCard = document.createElement("li");
         giftCard.className = "gift-card";
         const img = document.createElement('img');
@@ -26,8 +27,22 @@ function displayCards() {
         div.appendChild(h4);
         div.appendChild(h3);
         giftCard.appendChild(div);
-        gallery.appendChild(giftCard);
+        container.appendChild(giftCard);
     });
 }
 
-displayCards();
+function switchCategory(event) {
+    if (event.target.classList.contains("tab-item")) {
+        const selectedCategory = event.target.getAttribute("data-category");
+
+        document.querySelectorAll(".tab-item").forEach(tab => tab.classList.remove("active"));
+
+        event.target.classList.add("active");
+
+        displayCards(selectedCategory);
+    }
+}
+
+document.getElementById("tabs-container").addEventListener("click", switchCategory);
+
+displayCards("all");

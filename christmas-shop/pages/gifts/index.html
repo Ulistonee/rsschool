@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christmas Shop</title>
     <script type="module" defer src="../scripts/burger.js"></script>
+    <script type="module" defer src="../scripts/categories.js"></script>
     <link rel="icon" href="../../Vector.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../styles/base/style.css">
@@ -63,21 +64,21 @@
         <div class="gifts-bg-wrapper">
           <section class="gifts">
             <h1 class="header1 color-static-white text-align-center">Achieve health,<br> harmony, and<br> inner strength</h1>
-            <ul class="tabs color-static-white">
-              <li class="tab-item default-hover">
-                <p class="action-small">all</p>
+            <ul class="tabs color-static-white" id="tabs-container">
+              <li>
+                <button class="tab-item active action-small" data-category="all">all</button>
               </li>
-              <li class="tab-item">
-                <p class="action-small">for work</p>
+              <li>
+                <button class="tab-item action-small" data-category="For Work">for work</button>
               </li>
-              <li class="tab-item">
-                <p class="action-small">for health</p>
+              <li>
+                <button class="tab-item action-small" data-category="For Health">for health</button>
               </li>
-              <li class="tab-item">
-                <p class="action-small">for harmony</p>
+              <li>
+                <button class="tab-item action-small" data-category="For Harmony">for harmony</button>
               </li>
             </ul>
-            <ul class="gifts-pagination-container">
+            <ul class="gifts-pagination-container" id="gift-card-container">
               <li class="gift-card">
                 <img class="gift-img" src="../../assets/images/img-compressed/gift-for-work.png" alt="image of a gift">
                 <div class="gift-card-text-container">

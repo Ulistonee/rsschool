@@ -27,12 +27,11 @@
     transition: background-color 0.3s ease;
 }
 
-
 .tab-item:hover {
     background: var(--static-white-20);
 }
 
-.default-hover {
+.active {
     background: var(--static-white-20);
     cursor: default;
 }
