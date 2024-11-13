@@ -6,6 +6,7 @@
     <title>Christmas Shop</title>
     <script type="module" defer src="../scripts/burger.js"></script>
     <script type="module" defer src="../scripts/slider.js"></script>
+    <script type="module" defer src="../scripts/timer.js"></script>
     <link rel="icon" href="../../Vector.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../styles/base/style.css">
@@ -183,21 +184,21 @@
                     </a>
                     <div class="timer-wrapper">
                         <p class="caption color-static-white text-align-center">The New Year is Coming Soon...</p>
-                        <div class="timer color-static-white">
+                        <div class="timer color-static-white" id="timer">
                             <div class="cell-timer">
-                                <h2 class="header2 text-align-center">47</h2>
+                                <h2 class="header2 text-align-center" id="days">47</h2>
                                 <h4 class="header4 text-align-center">days</h4>
                             </div>
                             <div class="cell-timer">
-                                <h2 class="header2 text-align-center">5</h2>
+                                <h2 class="header2 text-align-center" id="hours">5</h2>
                                 <h4 class="header4 text-align-center">hours</h4>
                             </div>
                             <div class="cell-timer">
-                                <h2 class="header2 text-align-center">34</h2>
+                                <h2 class="header2 text-align-center" id="minutes">34</h2>
                                 <h4 class="header4 text-align-center">minutes</h4>
                             </div>
                             <div class="cell-timer">
-                                <h2 class="header2 text-align-center">12</h2>
+                                <h2 class="header2 text-align-center" id="seconds">12</h2>
                                 <h4 class="header4 text-align-center">seconds</h4>
                             </div>
                         </div>
