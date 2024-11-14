@@ -43,9 +43,34 @@
     gap: 12px;
 }
 
+.button-up {
+    position: fixed;
+    bottom: 20px;
+    right: 8px;
+    padding: 10px 15px;
+    background: var(--static-white);
+    color: var(--primary);
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    border-radius: 100px;
+    border: 1px solid var(--primary);
+    display: none;
+}
+
+.button-up.visible {
+    display: block;
+}
+
 @media (max-width: 1439px) {
     .gifts-pagination-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .button-up {
+        display: none;
     }
 }
 
