@@ -11,6 +11,7 @@ function displayCards(category) {
     filteredCards.forEach(card => {
         const giftCard = document.createElement("li");
         giftCard.className = "gift-card";
+        giftCard.setAttribute('data-name', card.name);
         const img = document.createElement('img');
         img.className = 'gift-img';
         img.src = card.src;
