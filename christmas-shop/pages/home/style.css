@@ -186,9 +186,9 @@
 }
 
 @media (max-width: 1500px) {
-    .about-text-container {
-        padding: 60px 60px 106px;
-    }
+    /*.about-text-container {*/
+    /*    padding: 60px 60px 106px;*/
+    /*}*/
 
     .santa {
         width: 376px;
