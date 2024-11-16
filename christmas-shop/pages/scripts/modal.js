@@ -10,7 +10,10 @@ function fillStars(points, id){
     const span = document.querySelector(`#${id} ~ span`);
     const svgsAfterSpan = span.querySelectorAll('svg');
     svgsAfterSpan.forEach((svg, index) => {
-        svg.style.fill = index < pointsForCycle ? "#ff4646": "#ff46461a";
+        svg.style.fill = "#ff46461a";
+        if (index < pointsForCycle){
+            svg.style.fill = "#ff4646";
+        }
     })
 }
 
