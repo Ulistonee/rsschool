@@ -37,4 +37,6 @@
 
 .non-interactive {
     pointer-events: none;
+    background: var(--primary-10);
+    color: var(--primary);
 }
