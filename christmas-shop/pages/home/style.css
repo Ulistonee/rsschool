@@ -83,7 +83,6 @@
 }
 
 .slider-container {
-    /*overflow-x: hidden;*/
     display: flex;
     gap: 20px;
     transition: transform 0.5s ease;

@@ -95,7 +95,7 @@ button:focus {
     color: var(--static-white-40);
     background: transparent;
     cursor: auto;
-    border: 1px solid var(--static-white-40);
+    border-color: var(--static-white-40);
 }
 
 .bg-width-wrapper {
