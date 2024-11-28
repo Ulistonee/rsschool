@@ -69,9 +69,9 @@ a {
 }
 
 .slider-btn:disabled {
+    pointer-events: none;
     color: var(--static-white-40);
     background: transparent;
-    cursor: auto;
     border-color: var(--static-white-40);
 }
 
