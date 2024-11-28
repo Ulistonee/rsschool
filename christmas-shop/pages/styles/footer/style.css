@@ -23,24 +23,12 @@
     width: 417px;
 }
 
-.contacts-card:hover {
-    cursor: pointer;
-}
-
 .contacts-card p {
     transition: color 0.3s ease;
 }
 
 .contacts-card h3 {
     transition: color 0.3s ease;
-}
-
-.contacts-card:hover p {
-    color: var(--primary);
-}
-
-.contacts-card:hover h3 {
-    color: var(--primary);
 }
 
 .footer-below-part-container {
@@ -60,18 +48,8 @@
     transition: color 0.3s ease;
 }
 
-.social-media-icon:hover {
-    cursor: pointer;
-    color: var(--primary);
-}
-
 .made-in-rsschool {
     transition: color 0.3s ease;
-}
-
-.made-in-rsschool:hover {
-    color: var(--primary);
-    cursor: pointer;
 }
 
 @media (max-width: 1439px) {
@@ -91,4 +69,28 @@
         padding-right: 8px;
     }
 
+}
+
+@media (hover: hover) {
+    .contacts-card:hover {
+        cursor: pointer;
+    }
+
+    .contacts-card:hover p {
+        color: var(--primary);
+    }
+
+    .contacts-card:hover h3 {
+        color: var(--primary);
+    }
+
+    .social-media-icon:hover {
+        cursor: pointer;
+        color: var(--primary);
+    }
+
+    .made-in-rsschool:hover {
+        color: var(--primary);
+        cursor: pointer;
+    }
 }
