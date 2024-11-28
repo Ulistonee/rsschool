@@ -58,12 +58,6 @@ a {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.primary-btn:hover {
-    background: var(--static-white);
-    color: var(--dark);
-    cursor: pointer;
-}
-
 .slider-btn {
     border: 1px solid var(--static-white);
     border-radius: 20px;
@@ -72,12 +66,6 @@ a {
     background: transparent;
     transition: background-color 0.3s ease;
     color: var(--static-white);
-}
-
-.slider-btn:hover{
-    background: var(--static-white);
-    cursor: pointer;
-    color: var(--primary);
 }
 
 .slider-btn:disabled {
@@ -104,14 +92,6 @@ a {
 
 .gift-card h3 {
     transition: color 0.3s ease;
-}
-
-.gift-card:hover {
-    cursor: pointer;
-}
-
-.gift-card:hover h3 {
-    color: var(--primary);
 }
 
 .gift-img {
@@ -147,5 +127,27 @@ a {
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+@media (hover: hover) {
+    .primary-btn:hover {
+        background: var(--static-white);
+        color: var(--dark);
+        cursor: pointer;
+    }
+
+    .slider-btn:hover{
+        background: var(--static-white);
+        cursor: pointer;
+        color: var(--primary);
+    }
+
+    .gift-card:hover {
+        cursor: pointer;
+    }
+
+    .gift-card:hover h3 {
+        color: var(--primary);
+    }
 }
 

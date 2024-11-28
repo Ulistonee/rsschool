@@ -27,11 +27,6 @@
     transition: background-color 0.3s ease;
 }
 
-
-.tab-item:hover {
-    background: var(--static-white-20);
-}
-
 .default-hover {
     background: var(--static-white-20);
     cursor: default;
@@ -95,5 +90,11 @@
     .gifts-pagination-container {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media (hover: hover) {
+    .tab-item:hover {
+        background: var(--static-white-20);
     }
 }

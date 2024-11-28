@@ -14,10 +14,6 @@
     align-items: center;
 }
 
-.logo-container:hover {
-    cursor: pointer;
-}
-
 .nav-container {
     display: flex;
     gap: 8px;
@@ -29,14 +25,20 @@
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.nav-container li:hover {
-    cursor: pointer;
-    background: var(--primary-10);
-    color: var(--primary);
-}
-
 .non-interactive {
     pointer-events: none;
     background: var(--primary-10);
     color: var(--primary);
+}
+
+@media (hover: hover) {
+    .logo-container:hover {
+        cursor: pointer;
+    }
+
+    .nav-container li:hover {
+        cursor: pointer;
+        background: var(--primary-10);
+        color: var(--primary);
+    }
 }
