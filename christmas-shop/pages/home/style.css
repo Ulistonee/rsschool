@@ -188,13 +188,6 @@
     content: none;
 }
 
-.burger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 4px;
-}
-
 @media (max-width: 1439px) {
     .about-text-container {
         padding-bottom: 106px;
@@ -234,23 +227,11 @@
     }
 }
 
-@media (max-width: 768px) {
-    .header-container {
-        padding: 12px 8px;
-    }
-
-    .burger {
-        display: flex;
-    }
-
-    .nav-bar {
-        display: none;
-    }
-
-    .slider-container {
-        overflow-x: hidden;
-    }
-}
+/*@media (max-width: 768px) {*/
+/*    .slider-container {*/
+/*        overflow-x: hidden;*/
+/*    }*/
+/*}*/
 
 @media (max-width: 720px) {
     .about-container {

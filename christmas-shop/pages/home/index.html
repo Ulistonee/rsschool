@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christmas Shop</title>
+    <script type="module" defer src="../scripts/burger.js"></script>
+    <script type="module" defer src="../scripts/slider.js"></script>
+    <script type="module" defer src="../scripts/timer.js"></script>
+    <script type="module" defer src="../scripts/best-gifts.js"></script>
     <link rel="icon" href="../../Vector.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" integrity="sha512-gnAN+RgTMylunXI7AMg+PtcUGpKZFkZJoFIkAWvdPFRrFJz3p2tx4+9xbjILRfN7CzoViMgS8vSf06fSQzWZjA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../styles/base/style.css">
     <link rel="stylesheet" href="../styles/base/typography.css">
     <link rel="stylesheet" href="../styles/header/style.css">
     <link rel="stylesheet" href="../styles/footer/style.css">
+    <link rel="stylesheet" href="../styles/burger/style.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -46,11 +51,15 @@
             </ul>
         </nav>
         <div class="burger" id="burger">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 16H30" stroke="#181C29" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M10 24H30" stroke="#181C29" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
+            <span></span>
+            <span></span>
         </div>
+        <ul class="burger-menu" id="burgerMenu">
+            <li><a href="../gifts/" class="action-large">gifts</a></li>
+            <li><a href="#about" class="action-large">about</a></li>
+            <li><a href="#bestGifts" class="action-large">best</a></li>
+            <li><a href="#contacts" class="action-large">contacts</a></li>
+        </ul>
     </header>
     <main>
         <div class="bg-width-wrapper">
@@ -85,36 +94,36 @@
         </div>
         <div class="bg-width-wrapper">
             <section class="slider-bg-wrapper">
-                <div class="slider-smaller-container">
+                <div class="slider-smaller-container" id="sliderContainer">
                     <div>
                         <p class="caption slider-caption color-static-white text-align-center">Become Happier!</p>
                         <h2 class="header2 slider-header2 color-static-white text-align-center">in the new 2025</h2>
                     </div>
-                    <ul class="slider-container">
-                            <li>
+                    <ul class="slider-container" id="slider">
+                            <li class="slider-item">
                                 <p class="slider-text color-static-white">live</p>
                                 <img src="../../assets/images/img-compressed/snowman.png" alt="">
                             </li>
-                            <li>
+                            <li class="slider-item">
                                 <p class="slider-text color-static-white">create</p>
                                 <img src="../../assets/images/img-compressed/christmas-trees.png" alt="">
                             </li>
-                            <li>
+                            <li class="slider-item">
                                 <p class="slider-text color-static-white">love</p>
                                 <img src="../../assets/images/img-compressed/christmas-tree-ball.png" alt="">
                             </li>
-                            <li>
+                            <li class="slider-item">
                                 <p class="slider-text color-static-white">dream</p>
                                 <img src="../../assets/images/img-compressed/fairytale-house.png" alt="">
                             </li>
                         </ul>
                     <div class="slider-btn-container">
-                        <button class="slider-btn prev-btn" disabled>
+                        <button class="slider-btn prev-btn" disabled id="prevButton">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18.5 12H6M6 12L12 6M6 12L12 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <button class="slider-btn next-btn">
+                        <button class="slider-btn next-btn" id="nextButton">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M6 12H18.5M18.5 12L12.5 6M18.5 12L12.5 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
@@ -130,7 +139,7 @@
                         <p class="caption color-static-white text-align-center">Best Gifts</p>
                         <h2 class="header2 color-static-white text-align-center">especially for you</h2>
                     </div>
-                    <ul class="best-gifts-gallery">
+                    <ul class="best-gifts-gallery" id="gallery">
                         <li class="gift-card">
                             <img class="gift-img" src="../../assets/images/img-compressed/gift-for-work.png" alt="image of a gift">
                             <div class="gift-card-text-container">
@@ -172,21 +181,21 @@
                     </a>
                     <div class="timer-wrapper">
                         <p class="caption color-static-white text-align-center">The New Year is Coming Soon...</p>
-                        <div class="timer color-static-white">
+                        <div class="timer color-static-white" id="timer">
                             <div class="cell-timer">
-                                <h2 class="header2 text-align-center">47</h2>
+                                <h2 class="header2 text-align-center" id="days">47</h2>
                                 <h4 class="header4 text-align-center">days</h4>
                             </div>
                             <div class="cell-timer">
-                                <h2 class="header2 text-align-center">5</h2>
+                                <h2 class="header2 text-align-center" id="hours">5</h2>
                                 <h4 class="header4 text-align-center">hours</h4>
                             </div>
                             <div class="cell-timer">
-                                <h2 class="header2 text-align-center">34</h2>
+                                <h2 class="header2 text-align-center" id="minutes">34</h2>
                                 <h4 class="header4 text-align-center">minutes</h4>
                             </div>
                             <div class="cell-timer">
-                                <h2 class="header2 text-align-center">12</h2>
+                                <h2 class="header2 text-align-center" id="seconds">12</h2>
                                 <h4 class="header4 text-align-center">seconds</h4>
                             </div>
                         </div>

@@ -42,6 +42,17 @@ a {
     margin: 0;
 }
 
+button {
+    all: unset;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
 .primary-btn {
     border: solid transparent;
     border-radius: 20px;
@@ -150,4 +161,9 @@ a {
         color: var(--primary);
     }
 }
+
+.no-scroll {
+    overflow: hidden;
+}
+
 
